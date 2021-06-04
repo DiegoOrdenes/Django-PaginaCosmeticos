@@ -1,1 +1,1 @@
-# VentaCosmeticos
+# Django-PaginaCosmeticos
