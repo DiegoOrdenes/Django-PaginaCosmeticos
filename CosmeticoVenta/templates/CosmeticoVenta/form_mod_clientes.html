@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="{% static 'CosmeticoVenta/css/form_clientes.css'%}">
+
+</head>  
+<body id = "bg" style="background-image: url('{% static 'CosmeticoVenta/img/modificar-cliente.jpeg' %}');">
+    <div class="login-box">
+        <h2>¡Editar Cliente!</h2>
+      <form  method="POST" action="" autocomplete="off">
+           {% csrf_token %}
+
+               {{ form.as_table}}
+
+           <input type="submit" name="" value="Editar">
+          
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
