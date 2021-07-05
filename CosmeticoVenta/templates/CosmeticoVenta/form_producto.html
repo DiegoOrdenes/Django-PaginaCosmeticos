@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'CosmeticoVenta/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'CosmeticoVenta/css/form_producto.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'CosmeticoVenta/css/tabla.css' %}">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="main-header__container">
+                <h1 class="main-header__title">PAGINA COSMETICOS</h1>
+                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="{% url 'home' %}" class="menu__link">INICIO</a></li>
+                        <li class="menu__item"><a href="{% url 'shop' %}" class="menu__link">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container">
+                <span class="main-header__txt">NECESITAS AYUDA</span>
+                <p class="main-header__txt"><i class="fas fa-phone"></i> LLAMAR +56940046539</p>
+            </div>
+            <div class="main-header__container">
+                <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+                <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <br><br><br>
+     <div class="login-box">
+         <h2>Agregar Productos</h2>
+       <form  method="post" action="" autocomplete="off">
+            {% csrf_token %}
+
+                {{ form.as_table}}
+
+            <input type="submit" name="" value="Agregar Producto">
+            <input type="reset"  id="limpiar" value="Limpiar">
+
+         </form>
+     </div>
+     <br><br><br>
+     <section>
+        <footer class="main-footer">
+            <div class="footer__section">
+                <h2 class="footer__title">Acerca de nosotros</h2>
+                <p class="footer__txt">Somos una pagina principalmente creada para la venta y distribucion de cosmeticos a nivel nacional</p>
+            </div>
+            <div class="footer__section">
+                <h2 class="footer__title">localizacion </h2>
+                <p class="footer__txt">Galicia 15, Maipú, Santiago</p>
+                <h2 class="footer__title">Contactos</h2>
+                <p class="footer__txt">telefono +569 133</p>
+                <p class="footer__txt">Email info@cosmeticos.cl</p>
+            </div>
+            <div class="footer__section">
+                <h2 class="footer__title">Otros links</h2>
+                <a href="" class="footer__link">Inicio</a>
+                <a href="" class="footer__link">Acerca nosotros</a>
+                <a href="" class="footer__link">Blog</a>
+                <a href="" class="footer__link">Tienda</a>
+                <a href="" class="footer__link">Contactenos</a>
+            </div>
+            <div class="footer__section">
+                <h2 class="footer__title">Para cualquier consulta, ingrese su pregunta</h2>
+                <p class="footer__txt">Cualquier consulta se respondera en las proximas 48 horas, de antemano gracias por su paciencia</p>
+                <input type="email" class="footer__input" placeholder="Ingrese su consulta aqui">
+            </div>
+            <p class="copy"> 2021 Pagina desarrollada por Diego Ordenes y Fabian Zambrano </p>
+        </footer>
+    </section>
+
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+
+
+</html>

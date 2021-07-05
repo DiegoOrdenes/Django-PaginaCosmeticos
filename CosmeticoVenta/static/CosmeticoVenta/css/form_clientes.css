@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+
+}
+.img-responsive{
+    width: 100% ;
+    height: 100% ;
+}
+
+body{
+    background: () no repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+}
+.login-box{
+    position: relative;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 40px;
+    width: 450px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 13em;
+
+}
+.login-box h2{
+    margin-bottom: 40px;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: consolas;
+    text-transform: uppercase;
+    color: rgb(221, 133, 0) ;
+}
+
+.login-box input{
+    background:  none;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid #999;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    border-bottom: none;
+    box-shadow: none;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: consolas;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(255, 123, 0);
+    background-color: rgb(167, 128, 70) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-box input[type="submit"]:hover{
+    background-color: #ff8800;
+    color: #000;
+    box-shadow: 0 0 5px #ff8800,
+                0 0 25px #ff8800,
+                0 0 50px #ff8800,
+                0 0 100px #ff8800;
+}
+
+
+
+.login-box input[type="reset"]{
+    border: none;
+    outline: none;
+    border-bottom: none;
+    box-shadow: none;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: consolas;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(255, 166, 0);
+    background-color: rgb(190, 139, 81) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-box input[type="reset"]:hover{
+    background-color: #ff8800 ;
+    color: #222;
+    box-shadow: 0 0 5px #ff8800,
+                0 0 25px #ff8800,
+                0 0 50px #ff8800,
+                0 0 100px #ff8800;
+}
+.login-box form div{
+    position: relative;
+}
+
+.login-box form div label{
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    left: 0;
+    letter-spacing: 1px;
+    color: #999;
+    transition: 0.5s;
+}
+
+.login-box input:focus ～ label,
+.login-box input:valid ～ label{
+    top: -12px;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f0;
+}
+
+.login-box input [type="text"]:focus,
+.login-box input [type="text"]:valid,
+.login-box input [type="number"]:focus,
+.login-box input [type="number"]:valid,
+.login-box input [type="password"]:focus,
+.login-box input [type="password"]:valid{
+    border-bottom:  3px solid #0f0;
+}
+
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: 1800px 900px;
+    background-position: top;
+    background-attachment: fixed;
+}
